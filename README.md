@@ -5,7 +5,17 @@
 
 > This tool plays a **critical role in weekly leadership reviews**, enabling data-driven decisions and exception management across millions in active projects.
 
-![Screenshot](./assets/1.png) <!-- Replace with your image path -->
+### Login screen
+![Screenshot](./assets/4.png)
+
+### Home page
+![Screenshot](./assets/1.png)
+
+### Active contracts
+![Screenshot](./assets/2.png)
+
+### Active contracts details
+![Screenshot](./assets/3.png)
 
 ## 💡 Idea & Concept
 The initiative originated from a strategic need to:
