@@ -5,7 +5,7 @@
 
 > This tool plays a **critical role in weekly leadership reviews**, enabling data-driven decisions and exception management across millions in active projects.
 
-![Screenshot](./assets/sicap-home.png) <!-- Replace with your image path -->
+![Screenshot](./assets/1.png) <!-- Replace with your image path -->
 
 ## 💡 Idea & Concept
 The initiative originated from a strategic need to:
