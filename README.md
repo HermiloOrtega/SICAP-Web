@@ -1,9 +1,9 @@
-# 📦 SICAP Web
+# 🌐 SICAP Web
 
 ## 🧭 Overview
-**SICAP Web** is a performance-focused enterprise application designed for executive leadership to monitor project execution, contract compliance, and operational KPIs across a construction and engineering organization. Originally a Windows Forms application hosted internally on IIS, the system is purpose-built for high-level decision-making, surfacing real-time analytics, contract lifecycle metrics, and vendor estimation insights in a centralized, secure interface.
+**SICAP Web** is a browser-based enterprise platform designed for Directors and Managers to monitor project KPIs, estimations, and contract performance at a high level. It extends the functionality of the core **[SICAP](https://github.com/HermiloOrtega/SICAP)** by offering a real-time, responsive, and mobile-accessible alternative—particularly for users on Mac or remote environments.
 
-> This tool plays a **critical role in weekly leadership reviews**, enabling data-driven decisions and exception management across millions in active projects.
+The platform is hosted on internal servers and built using **ASP.NET**, **C#**, **JavaScript**, and **SQL Server**. It provides visual breakdowns, monthly performance charts, and dynamic tables for KPI-driven decision-making.
 
 ### Login screen
 ![Screenshot](./assets/4.png)
@@ -18,80 +18,72 @@
 ![Screenshot](./assets/3.png)
 
 ## 💡 Idea & Concept
-The initiative originated from a strategic need to:
-- Provide a **cross-platform, visually intuitive interface** for managers and directors—especially those on macOS who were previously blocked from accessing internal systems.
-- Shift the focus from raw operations to **executive-level KPIs**, highlighting contract risk, overdue projects, and payment bottlenecks.
-- Offer drill-down capabilities from macro trends (on-time project ratios) to micro-levels (performance per engineer or vendor).
-
-The project served as a modernization of a legacy desktop system, bridging classic infrastructure with modern data visualization and dashboard patterns.
+Designed to overcome limitations of the **[SICAP](https://github.com/HermiloOrtega/SICAP)** platform dependency (Windows-only)
+SICAP Web empowers executives with:
+- Visual indicators and summaries of projects by status (active, delayed, overdue)
+- Drill-down capabilities into departments, project types, and engineer-specific performance
+- Full access from Mac devices and remote networks
 
 ## ✨ Features & Functionality
-- 🔐 **Authentication Layer**: Secure login with role-based access
-- 🏠 **Executive Dashboard** (Windows 10 UX):
-  - KPI-driven modules: Active Projects, Vendor Applications, Contract Additions, Team Capacity, and more
-  - Traffic light indicators (RAG system) based on configurable thresholds
-- 📊 **Interactive Analytics**:
-  - Drillable bar charts: Project timelines, monthly performance
-  - Summary tables with trendlines, thresholds, and real vs. target metrics
-  - Dynamic links to sub-reports per department, area, and engineer
-- 📁 **Data Query Engine**:
-  - Advanced filters for contracts, estimations, personal/vendor contracts, and extension requests
-- 📤 **Export & Reporting Tools**:
-  - Excel export of filtered views
-  - Planned Crystal Reports integration for PDF generation
-- 👤 **User Profile Management**
+- 📊 Bar graphs summarizing project performance month-over-month
+- 🟢🟡🔴 Traffic light indicators per KPI
+- 🔍 Filters by direction, subdirection, department, and individual engineer
+- 🧾 Detail views with contract info, % progress, delays, and financials
+- 📤 Export to Excel functionality
+- 🧭 Navigation per month, year, and KPI category
+- 🔐 Role-based access with environment selector (DEV/QAS/PRD)
 
 ## ⚙️ Tech Stack
-- **Frontend**: HTML, CSS, JavaScript, jQuery  
-- **Backend**: Visual Basic .NET, SQL Server  
-- **Architecture**: Windows Forms Application hosted via IIS (intranet-based)  
-- **Data Pipeline**: Summary tables via automated SQL jobs (ETL-style)  
-- **Reporting**: Planned Crystal Reports + Excel export
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** ASP.NET WebForms, Visual Basic
+- **Database:** SQL Server (shared with **[SICAP](https://github.com/HermiloOrtega/SICAP)** and **[SICAP Indicators](https://github.com/HermiloOrtega/SICAP-Indicators)**)
+- **Reporting:** Embedded charts and data tables
+- **IDE:** Visual Studio
 
 ## 🏗 Architecture & Design
-- **Modular UI with block navigation**, modeled after Windows 10 UX
-- **Pre-aggregated data layer** powered by scheduled Windows services for **performance at scale**
-- **Navigation flow**: Dashboard → KPIs → Summary Tables → Drilldown Reports → Detailed Contract View
-- **Responsive breakdown logic** to explore data hierarchically: from company-level down to the individual engineer
+- ASP.NET WebForms application hosted on company intranet
+- Shared database layer with **[SICAP](https://github.com/HermiloOrtega/SICAP)** for unified KPI logic
+- Modular design using master pages and web user controls
+- Performance-focused with pre-aggregated monthly data
+- Optimized for Mac and desktop browsers
 
 ## 🚀 Installation & Setup
-- **Deployment**: Hosted on internal Windows IIS servers
-- **Data Source**: SQL Server with ETL-style background jobs for data consolidation
-- **Access**: Internal-only; authenticated users via company credentials
+- **Deployment:** Internal IIS Web Server
+- **Access:** Secure login via intranet browser
+- **Environments:** DEV / QAS / PRD (switchable)
+- **Permissions:** Managed through Active Directory-like system
 
-> **Note:** Setup and deployments are handled by the internal IT department.
+> **Note:** The platform requires **[SICAP](https://github.com/HermiloOrtega/SICAP)** Updater for backend sync.
 
-## 🧑‍💻 My Role & Contributions
-As a core contributor during my tenure, I:
-- 🗄 Engineered high-performance SQL procedures for pre-aggregated KPIs and reporting views  
-- 🧱 Designed and built key UI components using WinForms and jQuery for interactive dashboards  
-- 🎨 Led the UX workstream for block-based layout and RAG-style visualization  
-- 🔁 Wrote reusable stored procedures and optimized cross-table joins for scalable performance  
-- 🧪 Owned end-to-end QA testing including boundary cases and report validation  
-- 🤝 Collaborated daily with a senior developer to align business needs with technical feasibility
+## 🧑‍💻 Usage
+1. Login with role-based credentials
+2. Select environment: DEV, QAS, or PRD
+3. Navigate to KPI dashboards and click on traffic lights to drill into data
+4. View trends, compare actual vs goal, and export if needed
+
+## 🔍 My Role & Contributions
+- 💼 Full-stack developer of SICAP Web
+- 🧱 Designed backend and UI with real-time filters and charts
+- 📈 Connected **[SICAP](https://github.com/HermiloOrtega/SICAP)** Updater output for fresh data feeds
+- 🤝 Coordinated QA and user testing with directors
 
 ## 🧗 Challenges & Learnings
-- Navigated a steep learning curve with **legacy WinForms UI and Visual Basic .NET**, while introducing modern best practices
-- Built a **data summary strategy** using SQL ETL-style jobs to handle scale and latency issues
-- Balanced the needs of executive stakeholders (macOS compatibility, summary focus) with legacy system constraints
-- Gained firsthand experience in **enterprise data governance, stakeholder communications, and multi-tier architecture**
+- Translating dense WinForms functionality into web workflows
+- Ensuring fast, responsive filtering with heavy KPI data
+- Creating a secure, role-specific experience compatible with Macs
+- Embedding legacy data from SAP into modern dashboards
 
 ## 📈 Future Enhancements
-- ✅ Migrate the application to a Web-first architecture using ASP.NET MVC or .NET Core  
-- 📱 Introduce responsive design for mobile access  
-- 🧾 Implement PDF reporting (Crystal Reports) and scheduled email digests  
-- 🔍 Build a dynamic search and tagging system for project tracking and alerts  
-
-## 🤝 Contributing
-This application is used internally across the organization by management. Future iterations and new modules are planned and maintained by the IT & Software Engineering team.
+- Replace legacy chart components with modern JS libraries
+- Add authentication via Microsoft Entra ID / Azure SSO
+- Build a mobile-first version or native app
 
 ## 🪪 License
-⚠️ License Notice  
-This repository was originally published under the MIT License.  
-As of April 22, 2025, the license has been changed to **CC BY-NC-ND 4.0**.  
-See the LICENSE file for details.
+⚠️ **Internal Use Only**  
+Originally under MIT; changed to **CC BY-NC-ND 4.0** as of April 22, 2025.
 
-## 🔗 Additional Resources
-- **Documentation:** Available via company SharePoint  
-- **Related Systems:** SICAP Desktop (Legacy), Vendor Portal, Budget Review Tool  
-- **Live Demo Link:** Restricted (internal access only)
+## 🔗 Related Projects
+- **[SICAP Indicators](https://github.com/HermiloOrtega/SICAP-Indicators)**
+- **[SICAP](https://github.com/HermiloOrtega/SICAP)**
+- **[SICAP Updater](https://github.com/HermiloOrtega/SICAP-Web-Updates)**
+- **[SICAP Foliador](https://github.com/HermiloOrtega/SICAP-Folio-Manager)**
