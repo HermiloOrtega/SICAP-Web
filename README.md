@@ -34,11 +34,13 @@ SICAP Web empowers executives with:
 - 🔐 Role-based access with environment selector (DEV/QAS/PRD)
 
 ## ⚙️ Tech Stack
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** ASP.NET WebForms, Visual Basic
-- **Database:** SQL Server (shared with **[SICAP](https://github.com/HermiloOrtega/SICAP)** and **[SICAP Indicators](https://github.com/HermiloOrtega/SICAP-Indicators)**)
-- **Reporting:** Embedded charts and data tables
-- **IDE:** Visual Studio
+| Category                | Tools & Frameworks |
+|-------------------------|--------------------|
+| **Frontend** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge) |
+| **Backend** | ![ASP.NET WebForms](https://img.shields.io/badge/ASP.NET%20WebForms-512BD4?logo=.net&logoColor=white&style=for-the-badge) ![Visual Basic](https://img.shields.io/badge/Visual%20Basic-512BD4?logo=visualstudio&logoColor=white&style=for-the-badge) |
+| **Databases & Storage** | ![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoft-sql-server&logoColor=white&style=for-the-badge) |
+| **Reporting** | ![Charts](https://img.shields.io/badge/Embedded%20Charts-000000?logo=chartjs&logoColor=white&style=for-the-badge) ![Data Tables](https://img.shields.io/badge/Data%20Tables-000000?logo=datatables&logoColor=white&style=for-the-badge) |
+| **IDE** | ![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91?logo=visualstudio&logoColor=white&style=for-the-badge) |
 
 ## 🏗 Architecture & Design
 - ASP.NET WebForms application hosted on company intranet
