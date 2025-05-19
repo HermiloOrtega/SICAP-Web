@@ -38,7 +38,7 @@ SICAP Web empowers executives with:
 |-------------------------|--------------------|
 | **Frontend**            | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge) |
 | **Backend**             | ![ASP.NET WebForms](https://img.shields.io/badge/ASP.NET%20WebForms-512BD4?logo=.net&logoColor=white&style=for-the-badge) ![Visual Basic](https://img.shields.io/badge/Visual%20Basic-512BD4?logo=visualstudio&logoColor=white&style=for-the-badge) |
-| **Platform**            | ![Web App](https://img.shields.io/badge/Windows%20App-0078D4?logo=windows&logoColor=white&style=for-the-badge) |
+| **Platform**            | ![Web App](https://img.shields.io/badge/Web%20App-0078D4?logo=windows&logoColor=white&style=for-the-badge) |
 | **Framework**           | ![.NET Framework](https://img.shields.io/badge/.NET%20Framework-512BD4?logo=.net&logoColor=white&style=for-the-badge) |
 | **IDE**                 | ![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91?logo=visualstudio&logoColor=white&style=for-the-badge) |
 | **Database**            | ![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoft-sql-server&logoColor=white&style=for-the-badge) |
